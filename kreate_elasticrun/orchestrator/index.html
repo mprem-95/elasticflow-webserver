@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>ElasticRun Dashboard</title>
+	</head>
+
+    <body>
+    
+        <h1 align="center"> Data Crawler Configuration </h1>
+        <br><br><br>
+    
+        <form action="http://127.0.0.1:9090/orchestrator/" method="GET">
+    
+            <table align="center">
+            
+            <tr>
+                <td>Commodity</td> 
+                <td><input type="text" name="commodity"></td>
+            </tr>
+
+            <tr><td><br></td></tr>
+
+            <tr>
+                <td>State</td> 
+                <td><input type="text" name="state"></td>
+            </tr>
+
+            <tr><td><br></td></tr>
+            
+            <tr>
+                <td>Region </td> 
+                <td><input type="text" name="region"></td>
+            </tr>
+            
+            <tr><td><br></td></tr>
+
+            <tr>
+                <td>Start Date </td> 
+                <td><input type="text" name="start_date"></td>
+            </tr>
+
+            <tr><td><br></td></tr>
+
+            <tr>
+                <td>End Date </td> 
+                <td><input type="text" name="end_date"></td>
+            </tr>
+
+            <tr><td><br></td></tr>
+
+            <tr>
+                <td align="center" colspan="2"> <h2> Data Sources </h2> </td>
+            </tr>
+
+            
+            
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" name="apmc" value="apmc"> APMC Price Trends <br><br>
+                    <input type="checkbox" name="news" value="news"> News Articles <br><br>
+                    <input type="checkbox" name="sector" value="sector"> Sectorial Trends <br><br>
+                    <input type="checkbox" name="social_media" value="social_media"> Social Media Sentiments <br><br>
+                    <input type="checkbox" name="politics" value="politics"> Political Trends <br><br>
+                    <input type="checkbox" name="nature" value="nature"> Natural Calamities <br><br>
+                    <input type="checkbox" name="global_cues" value="global_cues"> Global Economics <br><br>
+                </td>
+            </tr>
+
+            <tr><td><br></td></tr>
+            
+            <tr>
+                <td align="center" colspan="2"><input type="submit" value="Configure"></td>
+            </tr>
+
+            </table>
+        </form>
+    </body>
+</html>
